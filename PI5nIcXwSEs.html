@@ -1,0 +1,213 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>What Is Sector Rotation and How Can It Improve Your Trading Strategy?</title><style>body{font:17px/1.6 Arial;max-width:1050px;margin:40px auto;padding:20px;color:#19283a}a{color:#285d93}p>a{font:12px monospace;white-space:nowrap}header{border-bottom:2px solid #ddd}details{margin-top:30px}</style><header><h1>What Is Sector Rotation and How Can It Improve Your Trading Strategy?</h1><p>Video ID: PI5nIcXwSEs · Upload date: 20260603 · 213 segments</p><p><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs">Watch original video</a> · <a href="../index.html">All videos</a></p><p>Complete available caption transcript. Caption errors, excerpt boundaries and missing visuals remain source limitations.</p><p>Canonical ordered-segment SHA-256: 5af982d8c0d4ce7bdf2990b8c5d13c3d737c7c9500f74ef6cb61e0822cf17b8a</p></header><main><p id="s0"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=0s">00:00:00.000 – 00:00:02.070</a> Welcome to this explainer. Today, we&#x27;re</p>
+<p id="s1"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=2s">00:00:02.080 – 00:00:03.590</a> getting right to it and decoding the</p>
+<p id="s2"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=3s">00:00:03.600 – 00:00:05.710</a> exact systematic framework that</p>
+<p id="s3"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=5s">00:00:05.720 – 00:00:07.790</a> institutional investors use to navigate</p>
+<p id="s4"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=7s">00:00:07.800 – 00:00:09.510</a> the highly predictable ups and downs of</p>
+<p id="s5"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=9s">00:00:09.520 – 00:00:11.470</a> the stock market. We&#x27;re taking a really</p>
+<p id="s6"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=11s">00:00:11.480 – 00:00:14.070</a> deep dive into systemic sector rotation,</p>
+<p id="s7"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=14s">00:00:14.080 – 00:00:15.630</a> and we&#x27;re not just looking at the what,</p>
+<p id="s8"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=15s">00:00:15.640 – 00:00:17.190</a> we are digging into the mathematically</p>
+<p id="s9"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=17s">00:00:17.200 – 00:00:20.230</a> driven how. So, here is our road map.</p>
+<p id="s10"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=20s">00:00:20.240 – 00:00:22.030</a> We&#x27;ll hit the dual cycle dilemma,</p>
+<p id="s11"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=22s">00:00:22.040 – 00:00:24.190</a> outline the four business phases, jump</p>
+<p id="s12"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=24s">00:00:24.200 – 00:00:26.710</a> into tactical sector rotation, decode</p>
+<p id="s13"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=26s">00:00:26.720 – 00:00:29.070</a> reading macroeconomic signals, and wrap</p>
+<p id="s14"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=29s">00:00:29.080 – 00:00:31.590</a> up with Python backtesting and risks.</p>
+<p id="s15"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=31s">00:00:31.600 – 00:00:33.150</a> It&#x27;s going to be a fascinating journey,</p>
+<p id="s16"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=33s">00:00:33.160 – 00:00:35.070</a> taking us from abstract macroeconomic</p>
+<p id="s17"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=35s">00:00:35.080 – 00:00:36.910</a> theory straight down into practical</p>
+<p id="s18"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=36s">00:00:36.920 – 00:00:39.830</a> Python code. All right, part one, the</p>
+<p id="s19"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=39s">00:00:39.840 – 00:00:42.030</a> dual cycle dilemma. We actually have to</p>
+<p id="s20"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=42s">00:00:42.040 – 00:00:43.950</a> start by challenging a really common</p>
+<p id="s21"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=43s">00:00:43.960 – 00:00:45.750</a> assumption about how the stock market</p>
+<p id="s22"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=45s">00:00:45.760 – 00:00:47.710</a> reacts to the real-world economy,</p>
+<p id="s23"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=47s">00:00:47.720 – 00:00:50.310</a> because spoiler alert, the stock market</p>
+<p id="s24"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=50s">00:00:50.320 – 00:00:52.670</a> is not the economy. Check out the</p>
+<p id="s25"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=52s">00:00:52.680 – 00:00:54.550</a> fundamental disconnect between Main</p>
+<p id="s26"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=54s">00:00:54.560 – 00:00:56.830</a> Street and Wall Street. The economic</p>
+<p id="s27"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=56s">00:00:56.840 – 00:00:58.710</a> cycle tracks real-world physical</p>
+<p id="s28"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=58s">00:00:58.720 – 00:01:00.470</a> activity, you know, industrial</p>
+<p id="s29"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=60s">00:01:00.480 – 00:01:02.470</a> production, current employment numbers,</p>
+<p id="s30"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=62s">00:01:02.480 – 00:01:04.509</a> things like that. The market cycle</p>
+<p id="s31"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=64s">00:01:04.519 – 00:01:06.510</a> though, totally different beast. It</p>
+<p id="s32"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=66s">00:01:06.520 – 00:01:08.350</a> reflects the discounted expectations of</p>
+<p id="s33"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=68s">00:01:08.360 – 00:01:10.750</a> forward-looking financial markets. It&#x27;s</p>
+<p id="s34"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=70s">00:01:10.760 – 00:01:13.390</a> like the stock market is a giant shadow,</p>
+<p id="s35"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=73s">00:01:13.400 – 00:01:15.590</a> but it&#x27;s actually moving way ahead of</p>
+<p id="s36"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=75s">00:01:15.600 – 00:01:17.590</a> the physical body. Because equity</p>
+<p id="s37"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=77s">00:01:17.600 – 00:01:19.510</a> markets are always trying to anticipate</p>
+<p id="s38"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=79s">00:01:19.520 – 00:01:21.990</a> economic shifts, they consistently lead</p>
+<p id="s39"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=82s">00:01:22.000 – 00:01:24.630</a> the physical economy by 6 to 9 months.</p>
+<p id="s40"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=84s">00:01:24.640 – 00:01:26.670</a> And honestly, this creates a massive</p>
+<p id="s41"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=86s">00:01:26.680 – 00:01:29.030</a> dilemma for tactical execution. You</p>
+<p id="s42"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=89s">00:01:29.040 – 00:01:31.350</a> often have to rotate your capital into</p>
+<p id="s43"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=91s">00:01:31.360 – 00:01:33.390</a> sensitive sectors when the daily news</p>
+<p id="s44"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=93s">00:01:33.400 – 00:01:35.230</a> still looks completely awful, and then</p>
+<p id="s45"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=95s">00:01:35.240 – 00:01:37.070</a> shift to defense when everyone else is</p>
+<p id="s46"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=97s">00:01:37.080 – 00:01:39.550</a> out celebrating a booming economy. Now,</p>
+<p id="s47"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=99s">00:01:39.560 – 00:01:41.310</a> you may be wondering, if markets are</p>
+<p id="s48"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=101s">00:01:41.320 – 00:01:43.470</a> supposedly perfectly efficient, wouldn&#x27;t</p>
+<p id="s49"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=103s">00:01:43.480 – 00:01:45.670</a> all of this be priced in instantly?</p>
+<p id="s50"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=105s">00:01:45.680 – 00:01:48.230</a> Well, enter the gradual information</p>
+<p id="s51"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=108s">00:01:48.240 – 00:01:50.630</a> diffusion hypothesis. Basically, this</p>
+<p id="s52"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=110s">00:01:50.640 – 00:01:52.870</a> proposes that macroeconomic news doesn&#x27;t</p>
+<p id="s53"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=112s">00:01:52.880 – 00:01:54.910</a> just instantly download into every</p>
+<p id="s54"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=114s">00:01:54.920 – 00:01:56.830</a> market participant&#x27;s brain. People are</p>
+<p id="s55"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=116s">00:01:56.840 – 00:01:58.870</a> human, we suffer from cognitive biases,</p>
+<p id="s56"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=118s">00:01:58.880 – 00:02:00.670</a> we herd together, and that delayed</p>
+<p id="s57"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=120s">00:02:00.680 – 00:02:02.750</a> reaction creates these persistent,</p>
+<p id="s58"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=122s">00:02:02.760 – 00:02:04.910</a> highly exploitable trends that active</p>
+<p id="s59"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=124s">00:02:04.920 – 00:02:06.670</a> asset allocators can totally take</p>
+<p id="s60"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=126s">00:02:06.680 – 00:02:08.029</a> advantage of.</p>
+<p id="s61"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=128s">00:02:08.039 – 00:02:10.830</a> Moving right along to part two, the four</p>
+<p id="s62"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=130s">00:02:10.840 – 00:02:13.030</a> business phases. Let&#x27;s see how this</p>
+<p id="s63"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=133s">00:02:13.040 – 00:02:14.949</a> builds into an actionable framework by</p>
+<p id="s64"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=134s">00:02:14.959 – 00:02:16.910</a> breaking down the distinct seasons of</p>
+<p id="s65"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=136s">00:02:16.920 – 00:02:18.470</a> the business cycle.</p>
+<p id="s66"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=138s">00:02:18.480 – 00:02:20.990</a> If we look at data going back to 1945,</p>
+<p id="s67"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=141s">00:02:21.000 – 00:02:22.949</a> an average cycle lasts roughly 6 years</p>
+<p id="s68"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=142s">00:02:22.959 – 00:02:25.150</a> in total. The moderate growth mid-cycle</p>
+<p id="s69"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=145s">00:02:25.160 – 00:02:26.990</a> takes up the lion&#x27;s share by far at</p>
+<p id="s70"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=147s">00:02:27.000 – 00:02:29.070</a> about 36 months. Then you&#x27;ve got the</p>
+<p id="s71"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=149s">00:02:29.080 – 00:02:31.230</a> late cycle lasting roughly 18 months,</p>
+<p id="s72"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=151s">00:02:31.240 – 00:02:32.830</a> the early cycle at about 12 months, and</p>
+<p id="s73"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=152s">00:02:32.840 – 00:02:34.470</a> recessions, historically they&#x27;re pretty</p>
+<p id="s74"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=154s">00:02:34.480 – 00:02:36.830</a> swift, averaging just around 10 months.</p>
+<p id="s75"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=156s">00:02:36.840 – 00:02:38.350</a> This really brilliantly illustrates the</p>
+<p id="s76"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=158s">00:02:38.360 – 00:02:40.590</a> chronological progression of an economy.</p>
+<p id="s77"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=160s">00:02:40.600 – 00:02:42.150</a> You literally scrape the bottom during a</p>
+<p id="s78"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=162s">00:02:42.160 – 00:02:44.350</a> painful contraction, bounce back in a</p>
+<p id="s79"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=164s">00:02:44.360 – 00:02:46.990</a> sharp early cycle recovery, cruise into</p>
+<p id="s80"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=167s">00:02:47.000 – 00:02:49.350</a> a long mid-cycle expansion, and finally</p>
+<p id="s81"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=169s">00:02:49.360 – 00:02:51.390</a> overheat in a late cycle phase before</p>
+<p id="s82"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=171s">00:02:51.400 – 00:02:53.230</a> the whole thing resets.</p>
+<p id="s83"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=173s">00:02:53.240 – 00:02:55.470</a> Which brings us to part three, tactical</p>
+<p id="s84"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=175s">00:02:55.480 – 00:02:57.830</a> sector rotation. This is where theory</p>
+<p id="s85"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=177s">00:02:57.840 – 00:02:59.790</a> translates directly into portfolio</p>
+<p id="s86"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=179s">00:02:59.800 – 00:03:01.270</a> strategy.</p>
+<p id="s87"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=181s">00:03:01.280 – 00:03:04.630</a> Just look at the staggering number, 20%.</p>
+<p id="s88"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=184s">00:03:04.640 – 00:03:07.190</a> That is the average annualized return of</p>
+<p id="s89"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=187s">00:03:07.200 – 00:03:09.790</a> stocks in the early cycle phase alone.</p>
+<p id="s90"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=189s">00:03:09.800 – 00:03:11.830</a> When the economy just starts recovering</p>
+<p id="s91"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=191s">00:03:11.840 – 00:03:13.630</a> and credit loosens up, the broader</p>
+<p id="s92"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=193s">00:03:13.640 – 00:03:15.910</a> market&#x27;s historical gains are absolutely</p>
+<p id="s93"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=195s">00:03:15.920 – 00:03:17.750</a> massive. It just highlights the</p>
+<p id="s94"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=197s">00:03:17.760 – 00:03:20.190</a> incredible upside of rotating in at</p>
+<p id="s95"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=200s">00:03:20.200 – 00:03:22.550</a> exactly the right time. When you stack</p>
+<p id="s96"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=202s">00:03:22.560 – 00:03:25.550</a> that massive 20% early cycle spike next</p>
+<p id="s97"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=205s">00:03:25.560 – 00:03:27.990</a> to the steady 14% of the mid-cycle, and</p>
+<p id="s98"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=208s">00:03:28.000 – 00:03:30.910</a> then compare it to the painful 15% drop</p>
+<p id="s99"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=210s">00:03:30.920 – 00:03:32.949</a> you typically see during a recession,</p>
+<p id="s100"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=212s">00:03:32.959 – 00:03:34.670</a> yeah, it becomes pretty clear why being</p>
+<p id="s101"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=214s">00:03:34.680 – 00:03:36.150</a> on the right side of the business cycle</p>
+<p id="s102"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=216s">00:03:36.160 – 00:03:37.790</a> is one of the biggest drivers of</p>
+<p id="s103"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=217s">00:03:37.800 – 00:03:39.390</a> portfolio returns.</p>
+<p id="s104"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=219s">00:03:39.400 – 00:03:41.350</a> Now, this table right here, this is</p>
+<p id="s105"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=221s">00:03:41.360 – 00:03:43.670</a> essentially your ultimate cheat sheet.</p>
+<p id="s106"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=223s">00:03:43.680 – 00:03:45.630</a> It lays out exactly which industries</p>
+<p id="s107"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=225s">00:03:45.640 – 00:03:47.590</a> historically crush it, and which ones</p>
+<p id="s108"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=227s">00:03:47.600 – 00:03:50.030</a> play defense. In the early cycle, easy</p>
+<p id="s109"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=230s">00:03:50.040 – 00:03:51.830</a> credit supercharges consumer</p>
+<p id="s110"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=231s">00:03:51.840 – 00:03:53.990</a> discretionary and financials. During</p>
+<p id="s111"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=234s">00:03:54.000 – 00:03:56.070</a> that long mid-cycle, information</p>
+<p id="s112"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=236s">00:03:56.080 – 00:03:58.350</a> technology, specifically semiconductors,</p>
+<p id="s113"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=238s">00:03:58.360 – 00:04:00.310</a> takes the lead. When the late cycle hits</p>
+<p id="s114"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=240s">00:04:00.320 – 00:04:02.630</a> and brings inflation, energy and utility</p>
+<p id="s115"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=242s">00:04:02.640 – 00:04:04.870</a> shine. And finally, during a recession,</p>
+<p id="s116"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=244s">00:04:04.880 – 00:04:06.949</a> you want defensive sectors like consumer</p>
+<p id="s117"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=246s">00:04:06.959 – 00:04:08.710</a> staples and healthcare because, hey,</p>
+<p id="s118"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=248s">00:04:08.720 – 00:04:10.150</a> people always need toothpaste and</p>
+<p id="s119"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=250s">00:04:10.160 – 00:04:11.870</a> medicine no matter what the economy is</p>
+<p id="s120"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=251s">00:04:11.880 – 00:04:12.990</a> doing.</p>
+<p id="s121"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=253s">00:04:13.000 – 00:04:14.870</a> But, of course, all this incredible</p>
+<p id="s122"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=254s">00:04:14.880 – 00:04:17.229</a> historical data leads us to the literal</p>
+<p id="s123"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=257s">00:04:17.239 – 00:04:19.789</a> million-dollar question for any active</p>
+<p id="s124"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=259s">00:04:19.799 – 00:04:22.510</a> investor. How do we actually know what</p>
+<p id="s125"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=262s">00:04:22.520 – 00:04:24.950</a> phase we are in right now? Looking</p>
+<p id="s126"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=264s">00:04:24.960 – 00:04:26.670</a> backwards is easy. We need to look</p>
+<p id="s127"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=266s">00:04:26.680 – 00:04:29.470</a> forward. That takes us to part four,</p>
+<p id="s128"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=269s">00:04:29.480 – 00:04:32.350</a> reading macroeconomic signals. To figure</p>
+<p id="s129"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=272s">00:04:32.360 – 00:04:34.750</a> out where we are, we absolutely must</p>
+<p id="s130"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=274s">00:04:34.760 – 00:04:36.710</a> strip away the daily market noise,</p>
+<p id="s131"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=276s">00:04:36.720 – 00:04:39.070</a> ignore the flashy headlines, and rely on</p>
+<p id="s132"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=279s">00:04:39.080 – 00:04:42.430</a> hard, data-driven macro indicators.</p>
+<p id="s133"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=282s">00:04:42.440 – 00:04:44.510</a> Two of the most reliable leading signals</p>
+<p id="s134"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=284s">00:04:44.520 – 00:04:46.990</a> we have are the manufacturing PMI and</p>
+<p id="s135"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=287s">00:04:47.000 – 00:04:49.070</a> the Treasury yield curve, specifically</p>
+<p id="s136"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=289s">00:04:49.080 – 00:04:51.510</a> that 10-year minus 3-month yield, which</p>
+<p id="s137"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=291s">00:04:51.520 – 00:04:53.350</a> tracks how the bond market views future</p>
+<p id="s138"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=293s">00:04:53.360 – 00:04:55.710</a> borrowing costs. These indicators aren&#x27;t</p>
+<p id="s139"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=295s">00:04:55.720 – 00:04:57.070</a> looking in the rearview mirror. They</p>
+<p id="s140"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=297s">00:04:57.080 – 00:04:58.830</a> track raw investor sentiment and</p>
+<p id="s141"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=298s">00:04:58.840 – 00:05:01.070</a> expectations for future returns.</p>
+<p id="s142"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=301s">00:05:01.080 – 00:05:02.909</a> In fact, historically, they flipped up</p>
+<p id="s143"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=302s">00:05:02.919 – 00:05:05.110</a> to 12 months ahead of major economic</p>
+<p id="s144"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=305s">00:05:05.120 – 00:05:07.390</a> transitions. To put that into real-world</p>
+<p id="s145"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=307s">00:05:07.400 – 00:05:10.150</a> perspective, after peaking way back in</p>
+<p id="s146"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=310s">00:05:10.160 – 00:05:12.430</a> late 2021 and staying negative for</p>
+<p id="s147"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=312s">00:05:12.440 – 00:05:14.750</a> nearly three whole years, both of these</p>
+<p id="s148"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=314s">00:05:14.760 – 00:05:16.590</a> leading indicators suddenly flashed</p>
+<p id="s149"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=316s">00:05:16.600 – 00:05:19.350</a> positive in December 2025. That was no</p>
+<p id="s150"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=319s">00:05:19.360 – 00:05:21.430</a> coincidence. It was a structural,</p>
+<p id="s151"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=321s">00:05:21.440 – 00:05:23.230</a> data-driven signal that the market was</p>
+<p id="s152"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=323s">00:05:23.240 – 00:05:24.830</a> shifting into positive economic</p>
+<p id="s153"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=324s">00:05:24.840 – 00:05:26.830</a> conditions, favoring industrial,</p>
+<p id="s154"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=326s">00:05:26.840 – 00:05:29.350</a> transport, and retail. Finally, part</p>
+<p id="s155"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=329s">00:05:29.360 – 00:05:32.550</a> five, Python backtesting and risks. This</p>
+<p id="s156"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=332s">00:05:32.560 – 00:05:34.550</a> is where we bridge that high-level macro</p>
+<p id="s157"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=334s">00:05:34.560 – 00:05:36.870</a> theory with gritty, modern quantitative</p>
+<p id="s158"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=336s">00:05:36.880 – 00:05:39.190</a> practice. Because you don&#x27;t just guess</p>
+<p id="s159"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=339s">00:05:39.200 – 00:05:41.870</a> that a strategy works. You prove it.</p>
+<p id="s160"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=341s">00:05:41.880 – 00:05:43.710</a> Validating a rotation strategy means</p>
+<p id="s161"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=343s">00:05:43.720 – 00:05:45.550</a> putting it through these five rigorous</p>
+<p id="s162"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=345s">00:05:45.560 – 00:05:47.110</a> backtesting steps to prove it</p>
+<p id="s163"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=347s">00:05:47.120 – 00:05:48.990</a> mathematically. You&#x27;ve got to collect</p>
+<p id="s164"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=349s">00:05:49.000 – 00:05:51.390</a> clean data, set up extremely strict</p>
+<p id="s165"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=351s">00:05:51.400 – 00:05:53.070</a> entry and exit rules, write the</p>
+<p id="s166"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=353s">00:05:53.080 – 00:05:55.310</a> simulation in code, meticulously</p>
+<p id="s167"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=355s">00:05:55.320 – 00:05:57.710</a> evaluate the output, and then optimize</p>
+<p id="s168"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=357s">00:05:57.720 – 00:05:59.310</a> it carefully so you aren&#x27;t just curve</p>
+<p id="s169"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=359s">00:05:59.320 – 00:06:01.030</a> fitting to the past.</p>
+<p id="s170"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=361s">00:06:01.040 – 00:06:02.710</a> And today&#x27;s quantitative investors</p>
+<p id="s171"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=362s">00:06:02.720 – 00:06:04.390</a> definitely aren&#x27;t relying on gut</p>
+<p id="s172"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=364s">00:06:04.400 – 00:06:07.030</a> feelings. They use powerhouse Python</p>
+<p id="s173"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=367s">00:06:07.040 – 00:06:08.990</a> libraries. We&#x27;re talking Pandas for</p>
+<p id="s174"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=369s">00:06:09.000 – 00:06:11.350</a> complex data manipulation, Matplotlib</p>
+<p id="s175"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=371s">00:06:11.360 – 00:06:13.030</a> for visualizing performance, and</p>
+<p id="s176"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=373s">00:06:13.040 – 00:06:14.270</a> frameworks like backtrader to</p>
+<p id="s177"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=374s">00:06:14.280 – 00:06:15.750</a> programmatically test these macro</p>
+<p id="s178"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=375s">00:06:15.760 – 00:06:17.710</a> theories against literally decades of</p>
+<p id="s179"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=377s">00:06:17.720 – 00:06:19.990</a> market data. You can see exactly how</p>
+<p id="s180"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=380s">00:06:20.000 – 00:06:21.550</a> your specific rotation would have held</p>
+<p id="s181"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=381s">00:06:21.560 – 00:06:23.630</a> up during the 2008 financial crisis or</p>
+<p id="s182"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=383s">00:06:23.640 – 00:06:25.430</a> the 2020 crash.</p>
+<p id="s183"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=385s">00:06:25.440 – 00:06:28.070</a> But hold on, before you write a single</p>
+<p id="s184"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=388s">00:06:28.080 – 00:06:29.990</a> line of code, you really have to</p>
+<p id="s185"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=390s">00:06:30.000 – 00:06:31.909</a> internalize this wisdom from Aswath</p>
+<p id="s186"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=391s">00:06:31.919 – 00:06:33.790</a> Damodaran. If you don&#x27;t have a core</p>
+<p id="s187"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=393s">00:06:33.800 – 00:06:36.310</a> belief in why a market inefficiency</p>
+<p id="s188"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=396s">00:06:36.320 – 00:06:38.670</a> exists, like that gradual information</p>
+<p id="s189"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=398s">00:06:38.680 – 00:06:40.790</a> diffusion hypothesis we talked about,</p>
+<p id="s190"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=400s">00:06:40.800 – 00:06:42.390</a> you&#x27;re just blindly hunting for</p>
+<p id="s191"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=402s">00:06:42.400 – 00:06:44.510</a> patterns. And doing that, it&#x27;s just</p>
+<p id="s192"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=404s">00:06:44.520 – 00:06:46.750</a> going to rack up costly transaction fees</p>
+<p id="s193"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=406s">00:06:46.760 – 00:06:49.310</a> without actually beating the benchmark.</p>
+<p id="s194"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=409s">00:06:49.320 – 00:06:51.950</a> And this is absolutely crucial. While</p>
+<p id="s195"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=411s">00:06:51.960 – 00:06:53.909</a> calculating your sharp ratio or max</p>
+<p id="s196"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=413s">00:06:53.919 – 00:06:55.870</a> drawdown in Python is fantastic for</p>
+<p id="s197"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=415s">00:06:55.880 – 00:06:58.110</a> understanding your risk, a backtest only</p>
+<p id="s198"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=418s">00:06:58.120 – 00:06:59.990</a> ever tells you the past. It literally</p>
+<p id="s199"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=420s">00:07:00.000 – 00:07:02.070</a> cannot guarantee the future. Live</p>
+<p id="s200"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=422s">00:07:02.080 – 00:07:03.990</a> markets are full of unexpected shocks,</p>
+<p id="s201"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=424s">00:07:04.000 – 00:07:05.590</a> regulation changes, and structural</p>
+<p id="s202"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=425s">00:07:05.600 – 00:07:07.990</a> shifts that a simulation is simply never</p>
+<p id="s203"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=428s">00:07:08.000 – 00:07:10.310</a> going to fully predict. So, I want to</p>
+<p id="s204"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=430s">00:07:10.320 – 00:07:11.790</a> leave you with this final thought to</p>
+<p id="s205"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=431s">00:07:11.800 – 00:07:14.590</a> really chew on. Based on today&#x27;s PMI and</p>
+<p id="s206"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=434s">00:07:14.600 – 00:07:16.670</a> today&#x27;s yield curve, what phase is the</p>
+<p id="s207"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=436s">00:07:16.680 – 00:07:18.510</a> market&#x27;s shadow pricing in right the</p>
+<p id="s208"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=438s">00:07:18.520 – 00:07:20.909</a> second? And more importantly, is your</p>
+<p id="s209"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=440s">00:07:20.919 – 00:07:23.390</a> portfolio actually mathematically ready</p>
+<p id="s210"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=443s">00:07:23.400 – 00:07:25.270</a> for the next rotation? Thanks for</p>
+<p id="s211"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=445s">00:07:25.280 – 00:07:26.630</a> joining me for this explainer, and I&#x27;ll</p>
+<p id="s212"><a href="https://www.youtube.com/watch?v=PI5nIcXwSEs&amp;t=446s">00:07:26.640 – 00:07:29.440</a> catch you next time.</p></main></html>
